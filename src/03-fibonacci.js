@@ -4,3 +4,18 @@
 // fibonacci.next() // 1
 // fibonacci.next() // 1
 // fibonacci.next() // 2
+// prev + 1
+// start = 0
+// next ?
+let fibonacci = {
+  start: 0,
+  prev: 0,
+  next: function () {
+    // start + 1 // next
+    // 0
+    let result = this.start + this.prev;
+    this.prev = result;
+
+    return result;
+  }
+};
